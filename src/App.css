@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(27, 66%, 92%);
+  font-family: 'DM Sans', sans-serif;
+font-family: 'Hanken Grotesk', sans-serif;
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 120px;
+}
+.header{
+  background-color: hsl(10, 79%, 65%);
+  width: 35%;
+  display: flex;
+  justify-content: space-between !important;
+  padding: 23px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.headerRight{
+  margin-top: 15px;
+  
+
+}
+.balanceP{
+  color: white;
+}
+.balance{
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+}
+.chartContainer{
+  background-color: white;
+  width: 35%;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 20px;
+}
+.itemContainer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 130px;
+}
+.item{
+  width: 13%;
+  margin-right: 13px;
+  text-align: center;
+  
+}
+.chart-container{
+  background-color: white;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.spending{
+  font-size: 25px;
+  font-weight: 600;
+}
+.total{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.pale{
+  color: #9a9a9a;
+}
+.totalPrice{
+  font-size: 30px;
+  font-weight: 600;
+}
+.totalLeft{
+  display: flex;
+  flex-direction: column;
+}
+.totalRight{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 12px;
+}
+.hover{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 60px;
+  padding: 2px;
+  margin-bottom: 5px;
+  
+}
+@media screen and (max-width:375px) {
+  .header{
+    background-color: hsl(10, 79%, 65%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+    border-radius: 20px;
+  }
+  .chart-container{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 20px;
+  }
+}
