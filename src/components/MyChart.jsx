@@ -24,18 +24,24 @@ function MyChart() {
 
   for (var i = 0; i < 7; i++) {
     color.push("hsl(10, 79%, 65%)");
-    hoverColor.push("hsl(10, 91%, 77%)");
-  
-    
+    hoverColor.push("hsl(10, 91%, 77%)");    
   }
   var d = new Date();
   var dayName = d.toString().split(" ")[0];
+console.log(dayName)
+  const str = labels[d.getDay()-1];
+  const str2 = str?.charAt(0).toUpperCase() + str?.slice(1);
 
-  const str = labels[d.getDay() - 1];
-  const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+  const strSun = labels[6];
+  const strSun2 = strSun?.charAt(0).toUpperCase() + strSun?.slice(1);
+
   if (dayName === str2) {
-    color[d.getDay() - 1] = "hsl(186, 34%, 60%)",
+    color[d.getDay()-1] = "hsl(186, 34%, 60%)",
     hoverColor[d.getDay()-1] = "hsl(186, 56%, 78%)";
+  }
+  else if(dayName === strSun2){
+    color[6] = "hsl(186, 34%, 60%)",
+    hoverColor[6] = "hsl(186, 56%, 78%)";
   }
 console.log(dayName)
   const [chartData, setChartData] = useState({
